@@ -9,7 +9,7 @@ import (
 
 const usage = `usage: stopwatch
 
-stopwatch displays the seconds and milliseconds since it began running.`
+stopwatch displays the seconds that have passed since it began running.`
 
 func main() {
 	flag.Usage = func() {
