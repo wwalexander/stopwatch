@@ -17,7 +17,7 @@ func main() {
 	}
 	flag.Parse()
 	start := time.Now()
-	c := time.Tick(25 * time.Millisecond)
+	c := time.Tick(50*time.Millisecond)
 	for now := range c {
 		since := now.Sub(start)
 		fmt.Fprintf(os.Stderr, "\r%.3f", since.Seconds())
